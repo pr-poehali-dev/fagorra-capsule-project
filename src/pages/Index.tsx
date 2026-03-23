@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const CAPSULE_FREE = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/files/8626268f-4a29-4a9b-ad68-3ee7b2309b29.jpg";
-const CAPSULE_PREMIUM = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/files/2ca5363b-a82f-4a97-b10f-ec04bd55bbd8.jpg";
+const CAPSULE_FREE = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/bucket/be84e71a-0e56-4ea6-b21a-683eda19001f.jpg";
+const CAPSULE_PREMIUM = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/bucket/f7c96d80-e7e4-4d39-84d9-946afdaa321e.jpg";
 const FACTORY = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/files/0417db6d-af87-482f-bde5-d84925bde9ae.jpg";
 
 const sections = [
