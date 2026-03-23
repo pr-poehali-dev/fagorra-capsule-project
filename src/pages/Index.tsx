@@ -1,8 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const CAPSULE_FREE = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/files/8626268f-4a29-4a9b-ad68-3ee7b2309b29.jpg";
-const CAPSULE_PREMIUM = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/files/2ca5363b-a82f-4a97-b10f-ec04bd55bbd8.jpg";
+const CAPSULE_FREE = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/bucket/be84e71a-0e56-4ea6-b21a-683eda19001f.jpg";
+const CAPSULE_PREMIUM = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/bucket/f7c96d80-e7e4-4d39-84d9-946afdaa321e.jpg";
 const FACTORY = "https://cdn.poehali.dev/projects/3d7d85d1-5a13-455e-87cf-b418134ec139/files/0417db6d-af87-482f-bde5-d84925bde9ae.jpg";
 
 const sections = [
@@ -392,10 +392,31 @@ export default function Index() {
             </div>
           </AnimatedSection>
           <AnimatedSection>
-            <div className="rounded-2xl overflow-hidden aspect-square">
+            <div className="rounded-2xl overflow-hidden aspect-video mb-6">
               <img src={FACTORY} alt="Завод Фагорра" className="w-full h-full object-cover" />
             </div>
-            <div className="mt-6 grid grid-cols-3 gap-4">
+            <p className="text-xs tracking-[0.2em] uppercase text-[#888] mb-4">Продукция завода</p>
+            <div className="grid grid-cols-2 gap-4 mb-6">
+              <div className="rounded-xl overflow-hidden border border-[#e8e4df] bg-white">
+                <div className="aspect-video overflow-hidden">
+                  <img src={CAPSULE_FREE} alt="Свободная капсула" className="w-full h-full object-cover" />
+                </div>
+                <div className="p-3">
+                  <p className="font-medium text-sm">Свободная</p>
+                  <p className="text-xs text-[#888]">7 млрд шт. в год</p>
+                </div>
+              </div>
+              <div className="rounded-xl overflow-hidden border border-[#e8e4df] bg-white">
+                <div className="aspect-video overflow-hidden">
+                  <img src={CAPSULE_PREMIUM} alt="Профессиональная капсула" className="w-full h-full object-cover" />
+                </div>
+                <div className="p-3">
+                  <p className="font-medium text-sm">Профессиональная</p>
+                  <p className="text-xs text-[#888]">50 млн шт. в год</p>
+                </div>
+              </div>
+            </div>
+            <div className="grid grid-cols-3 gap-4">
               {[
                 { label: "Сотрудников", value: "100 млн" },
                 { label: "Производство", value: "35 млн" },
